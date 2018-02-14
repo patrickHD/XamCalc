@@ -514,6 +514,9 @@ namespace XamCalc
 			// aapt resource value: 0x7f080005
 			public const int Widget_Compat_NotificationActionText = 2131230725;
 			
+			// aapt resource value: 0x7f080007
+			public const int button_calculator = 2131230727;
+			
 			static Style()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();

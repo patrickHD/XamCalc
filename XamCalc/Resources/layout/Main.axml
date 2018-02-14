@@ -20,7 +20,11 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        app:orientation="horizontal"
+        app:orientation="vertical"
         app:rowCount="5"
-        app:columnCount="4"/>
+        app:columnCount="4">
+        <Button
+            style="@style/button_calculator"
+            android:text="DEL" />
+    </android.support.v7.widget.GridLayout>
 </LinearLayout>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <style name="button_calculator">
+    <item name="layout_rowWeight">1</item>
+    <item name="layout_columnWeight">1</item>
+    <item name="android:textSize">25sp</item>
+    <item name="android:onClick">ButtonClick</item>
+  </style>
+</resources>
