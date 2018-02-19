@@ -288,8 +288,17 @@ namespace XamCalc
 			// aapt resource value: 0x7f090029
 			public const int action_divider = 2131296297;
 			
+			// aapt resource value: 0x7f09002e
+			public const int action_exit = 2131296302;
+			
 			// aapt resource value: 0x7f09001e
 			public const int action_image = 2131296286;
+			
+			// aapt resource value: 0x7f09002d
+			public const int action_info = 2131296301;
+			
+			// aapt resource value: 0x7f09002c
+			public const int action_support = 2131296300;
 			
 			// aapt resource value: 0x7f09001f
 			public const int action_text = 2131296287;
@@ -470,6 +479,22 @@ namespace XamCalc
 			}
 			
 			private Layout()
+			{
+			}
+		}
+		
+		public partial class Menu
+		{
+			
+			// aapt resource value: 0x7f0b0000
+			public const int option_menu = 2131427328;
+			
+			static Menu()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Menu()
 			{
 			}
 		}

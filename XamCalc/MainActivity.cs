@@ -2,11 +2,13 @@
 using Android.Widget;
 using Android.OS;
 using Android.Views;
+using Xamarin.Android;
 using System;
+using Android.Text;
 
 namespace XamCalc
 {
-    [Activity(Label = "XamCalc", MainLauncher = true)]
+    [Activity(Label = "Simple Calculator", MainLauncher = true)]
     public class MainActivity : Activity
     {
         private TextView calculatorText;
@@ -19,6 +21,39 @@ namespace XamCalc
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
             calculatorText = FindViewById<TextView>(Resource.Id.calculator_text_view);
+            
+        }
+
+        public override bool OnCreateOptionsMenu(IMenu menu)
+        {
+            MenuInflater.Inflate(Resource.Menu.option_menu, menu);
+            return true;
+        }
+
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            switch (item.ItemId)
+            {
+                case Resource.Id.action_support:
+                    Toast.MakeText(ApplicationContext, "test", ToastLength.Long).Show();
+                    return true;
+                case Resource.Id.action_info:
+                    string myHtmlText = "<p>App made by Patrick Daniel to test Xamarin and AdMob. GitHub: <a href='https://github.com/patrickHD'>patrickHD</a> Website: <a href='http://patrickdaniel.tech'>PatrickDaniel.tech</a></p>";
+                    AlertDialog.Builder dialog = new AlertDialog.Builder(this);
+                    AlertDialog alert = dialog.Create();
+                    alert.SetTitle("About the Dev");
+                    alert.SetMessage(message: Html.FromHtml(myHtmlText));
+                    alert.SetButton("OK", (c, ev) =>
+                    {
+
+                    });
+                    alert.Show();
+                    return true;
+                case Resource.Id.action_exit:
+                    System.Environment.Exit(0);
+                    return true;
+            }
+            return base.OnOptionsItemSelected(item);
         }
 
         [Java.Interop.Export("ButtonClick")]

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+  <!--///showAsAction="always" ///-->
+  <item android:id="@+id/action_support" android:title="Support the Dev (Ad)" showAsAction="always" />
+  <item android:id="@+id/action_info" android:title="Dev Info" showAsAction="always" />
+  <item android:id="@+id/action_exit" android:title="Exit" showAsAction="always" />
+</menu>
