@@ -35,14 +35,14 @@ namespace XamCalc
             switch (item.ItemId)
             {
                 case Resource.Id.action_support:
-                    Toast.MakeText(ApplicationContext, "test", ToastLength.Long).Show();
+                    Toast.MakeText(ApplicationContext, "Ad here eventually", ToastLength.Long).Show();
                     return true;
                 case Resource.Id.action_info:
                     string myHtmlText = "<p>App made by Patrick Daniel to test Xamarin and AdMob. GitHub: <a href='https://github.com/patrickHD'>patrickHD</a> Website: <a href='http://patrickdaniel.tech'>PatrickDaniel.tech</a></p>";
                     AlertDialog.Builder dialog = new AlertDialog.Builder(this);
                     AlertDialog alert = dialog.Create();
                     alert.SetTitle("About the Dev");
-                    alert.SetMessage(message: Html.FromHtml(myHtmlText));
+                    alert.SetMessage(Html.FromHtml(myHtmlText));
                     alert.SetButton("OK", (c, ev) =>
                     {
 

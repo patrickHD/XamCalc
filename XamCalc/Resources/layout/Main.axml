@@ -4,7 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-  <HorizontalScrollView
+    <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
@@ -29,7 +29,7 @@
             android:text="DEL" />
         <Button
             style="@style/button_calculator"
-            android:text="4" />
+            android:text="7" />
         <Button
             style="@style/button_calculator"
             android:text="4" />
